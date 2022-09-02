@@ -1,0 +1,23 @@
+
+.grid-container {
+    display: grid;
+    column-gap: 5px;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Numans', sans-serif;
+    background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+    grid-template-columns: auto auto auto auto auto;
+  }
+
+.card-text {
+    color: white;
+    margin: 10px;
+}
+
+.card-container {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    height: 320px;
+    width: 249px;
+}

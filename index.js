@@ -6,6 +6,7 @@ const bodyParser = require( 'body-parser' );
 
 // import routes
 const loginRoute = require( './routes/login' );
+const homeRoute = require( './routes/home' );
 
 const app = express();
 
@@ -19,6 +20,7 @@ app.set( 'views', 'views' );
 app.use( express.static( path.join( __dirname, 'public' )))
 
 app.use( loginRoute.routes );
+app.use( homeRoute.routes );
 
 // able to listen the application
 app.listen( 5000 );
