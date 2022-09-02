@@ -88,3 +88,8 @@ input:focus {
 .links a {
     margin-left: 4px;
 }
+
+.link {
+    text-decoration: none;
+    color: yellow;
+}
