@@ -22,5 +22,9 @@ app.use( express.static( path.join( __dirname, 'public' )))
 app.use( loginRoute.routes );
 app.use( homeRoute.routes );
 
+app.use( (req, res, next) => {
+    res.redirect( "/login" );
+})
+
 // able to listen the application
 app.listen( 5000 );
