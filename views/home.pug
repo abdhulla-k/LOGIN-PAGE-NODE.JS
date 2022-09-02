@@ -9,10 +9,15 @@ html(lang="en")
         link(rel="stylesheet", href="/home.css")
         title #{pageTitle}
     body 
-        .grid-container
-            each product in products
-                .card-container
-                    .card(style="width: 18rem;")
-                        img.card-img-top(src=`${product.url}` alt="Card image cap" width="250px")
-                        .card-body
-                            h3.card-text #{product.content}
+        .containerfluid.cont
+            head.header
+                .header
+                    div.logout-btn
+                        a.btn.btn-light(href="/logout")  Logout
+            .grid-container
+                each product in products
+                    .card-container
+                        .card(style="width: 18rem;")
+                            img.card-img-top(src=`${product.url}` alt="Card image cap" width="250px")
+                            .card-body
+                                h3.card-text #{product.content}
