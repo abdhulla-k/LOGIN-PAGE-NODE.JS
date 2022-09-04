@@ -4,6 +4,7 @@ const path = require( 'path' );
 
 const bodyParser = require( 'body-parser' );
 const session = require('express-session');
+const nocatche = require( 'nocache' );
 
 
 // import routes
@@ -22,6 +23,9 @@ app.use(session({
     resave: false,
     cookie: { maxAge :600000 }
 }))
+
+// set nocache
+app.use( nocatche());
 
 // set view engine
 app.set( 'view engine', 'pug' );
